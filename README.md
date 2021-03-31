@@ -8,7 +8,8 @@ Original repository [benhoyt/countwords](https://github.com/benhoyt/countwords) 
 Currently about 25-30% slower than Go.
 
 Probably no point running with `--gc:` other than `arc` or `orc`. Last comparison of various included garbage collectors:
-```arc: 7.1s
+```
+arc: 7.1s
 refc: 9.2s
 markAndSweep: 10.7s
 regions: 13.1s
@@ -32,7 +33,7 @@ nim c --gc:arc -d:danger --passC:"-flto" --passL:"-flto" -o:optimized_nim optimi
 ```
 
 ## Credits
-The included Go version: [ben Hoyt](https://github.com/benhoyt) and [Miguel Angel](https://github.com/ntrrg)
+The included Go version: [Ben Hoyt](https://github.com/benhoyt) and [Miguel Angel](https://github.com/ntrrg)
 
 ## License
 MIT
