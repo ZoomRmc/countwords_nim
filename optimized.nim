@@ -1,5 +1,5 @@
-from tables import initCountTable, inc, sort, pairs, len
-from algorithm import SortOrder, sortedByIt, sort
+from tables import initCountTable, inc, sort, pairs
+from algorithm import SortOrder, sort
 from hashes import Hash, `!$`, `!&`
 
 proc hash*(x: string): Hash {.inline.} =
@@ -53,7 +53,7 @@ proc main() =
       wstart, wend = 0
     while wstart <= lastChar:
       if inside:
-        if buf[wend].isWhitespace: # leaving word
+        if buf[wend].isWhitespace(): # leaving word
           inside = false
           wordBuf.copy(buf{wstart..<wend})
           words.inc(wordBuf)
@@ -64,7 +64,7 @@ proc main() =
             buf[wend] = chr(ord(buf[wend]) + (ord('a') - ord('A')))
           wend.inc()
       else:
-        if buf[wstart].isWhitespace: # skipping whitespace
+        if buf[wstart].isWhitespace(): # skipping whitespace
           wstart.inc()
           continue
         else: # entering a word

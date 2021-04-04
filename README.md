@@ -5,7 +5,12 @@ See the full original article for context and background: [https://benhoyt.com/w
 Original repository [benhoyt/countwords](https://github.com/benhoyt/countwords) is closed for further contributions.
 
 ## Status:
-Mission accomplished: Currently about 1-3% faster than Go.
+🍾*Mission accomplished!* Currently faster than Go by a factor dependent on input size:
+```
+x1: 19%
+x10: 3.7%
+x50: 1.7%
+```
 
 Code tries to stay close to the same basic algorithm used by most optimized versions from the original repo.
 
