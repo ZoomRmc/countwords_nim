@@ -4,6 +4,11 @@ See the full original article for context and background: [https://benhoyt.com/w
 
 Original repository [benhoyt/countwords](https://github.com/benhoyt/countwords) is closed for further contributions.
 
+## Details and discussion
+See the nim-lang forum thread: https://forum.nim-lang.org/t/7926
+
+⚠️ There's a [separate branch with a faster hashing hack](https://github.com/ZoomRmc/countwords_nim/tree/hashrearhatch) applied. See details in the commit messages.
+
 ## Status:
 🍾*Mission accomplished!* Currently faster than Go by a factor dependent on input size:
 ```
